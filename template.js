@@ -17,6 +17,7 @@ function showStatus() {
     return function (e) {
         let div = (e.target.parentNode.children)[1];
         div.style.display = div.style.display === 'none' ? 'inline' : 'none';
+         e.target.innerHTML = e.target.innerHTML === 'Hide Status' ? 'Show Status' : 'Hide Status';
     };
 }
 
